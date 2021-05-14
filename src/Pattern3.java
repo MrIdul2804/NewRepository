@@ -13,7 +13,7 @@ public static void printPascal(int n){
                 k=k*(i-j)/j;
             }
             System.out.println();
-            agam
+
         }
 }
 
