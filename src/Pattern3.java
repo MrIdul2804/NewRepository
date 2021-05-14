@@ -3,12 +3,17 @@ public class Pattern3 {
     public static void main(String []args){
         Scanner sc= new Scanner(System.in);
         int num= sc.nextInt();
-        int temp=1;
-        for(int i=0;i<num;i++){
-            for(int j=0;j<num;j++){
-
-            }
-        }
+        printPascal(num);
     }
+public static void printPascal(int n){
+        for(int i=1;i<=n;i++){
+            int k=1;
+            for(int j=1;j<=i;j++){
+                System.out.print(k+" ");
+                k=k*(i-j)/j;
+            }
+            System.out.println();
+        }
+}
 
 }
