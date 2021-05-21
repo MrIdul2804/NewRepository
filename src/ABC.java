@@ -4,16 +4,15 @@ public class ABC {
         Scanner sc= new Scanner(System.in);
 
         int num=sc.nextInt();
-        for(int i=1;i<=num;i++){
+        for(int i=0;i<num;i=i+2){
             int temp=1;
-            if(i%2!=0) {
-                for (int j = 1; j <= i; j++) {
+
+                for (int j = 0; j < i+1; j++) {
                     System.out.print(temp);
                     System.out.print(" ");
                     temp++;
                 }
                 System.out.println();
-            }
 
         }
     }
